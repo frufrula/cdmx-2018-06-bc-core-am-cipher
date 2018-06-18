@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset = "utf-8">
+      <title>Cifrado César</title>
+        <link rel = "stylesheet" href = "style.css"/>
+          <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+          <!-- viewport es el tamaño actual de la pantalla; aqui se le indica a los dispositivos
+          que el contenido debe tener el mismo tamaño que el dispositivo en cuestión.
+          initial-scale indica que el programa no intente alterar el tamaño para caber en distintas
+          pantallas, si no, que sea al revés. -->
   </head>
   <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <header id = "container1">
+      <img src = "Images/banner3.png">
+        <div id = "leftColumn"><strong>¡Bienvenidx!</strong>
+        </div>
+          <div id = "rightColumn"><strong>Protege tu privacidad y comunícate de manera secreta, cifrando
+          contenido delicado, contraseñas o mensajes privados a través de
+          uno de los cifrados más antiguos del mundo, inventado por el
+          emperador romano Julio César.</strong>
+          </div>
+    </header>
+      <section>
+        <div id = "aboveOffset">
+          <strong>Escoge cualquier número o ingresa un número dado como clave y
+          asegurate de darselo a la persona quién recibirá el mensaje.</strong>
+        </div>
+        
+          <form>
+
+            <div id = "offset"><strong>Clave:</strong>
+              <input type = "number" id = "offsetNumber" placeholder = "0">
+            </div>
+
+            <div id = "cipher"><strong>Texto normal:</strong><br>
+              <textarea rows = "5" cols = "20" id = "textCipher" placeholder = "Escibe tu texto aqui..."></textarea>
+              <input id = "buttonCipher" class = "buttons" name = "Encriptar" value = "Encriptar" type = "button"/>
+            </div>
+
+            <div id = "decipher"><strong>Texto cifrado:</strong><br>
+              <textarea rows = "5" cols = "20" id = "textDecipher" placeholder = "Escibe tu texto aqui..."></textarea>
+              <input id = "buttonDecipher" class = "buttons" name = "Desencriptar" value = "Desencriptar" type = "button"/>
+            </div>
+
+            <!-- <div id = "copyAll">
+                <button id = "copyText" class = "buttons" onclick="copyText()">Copiar</button>
+              </div> -->
+            
+            <div id = "ResetAll">
+              <button id = "buttonReset" class = "buttons" onclick="refreshPage()">Refrescar</button>
+            </div>
+      
+          </form>
+      </section>
+    
+
+      <footer>
+        <div><span id = "copyLeft">©</span>frufrula</div>
+      </footer>
+
+    <script src = "cipher.js"></script>
+    <script src = "index.js"></script>
   </body>
 </html>

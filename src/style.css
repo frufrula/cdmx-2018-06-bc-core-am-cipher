@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+/* Reset style global */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Con esta declaración del selector body se llama el font
+y las demás propiedades: */
+body {
+    background: #ffffff;
+    color: black;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    /* margin: 0; */
+}
+
+
+/* Selectores y declaraciones del header: */
+#container1 {
+    width: 100%;
+    display: inline-table;
+}
+
+#leftColumn {
+    block-size: 25%;
+    background: rgba(197, 149, 15, 0.746);
+    border-radius: 30px 0px 0px 30px;
+    padding: 33px 10px;
+    font-size: 3em;
+    text-align: center;
+    top: 50%;
+}
+
+#rightColumn {
+    block-size: 30%;
+    background: rgba(170, 145, 7, 0.726);
+    /* box-sizing: border-box; */
+    border-radius: 0px 30px 30px 0px;
+    padding: 33px 10px;
+    font-size: 120%;
+    /* line-height: 100%; */
+    text-align: justify;
+}
+
+
+
+#aboveOffset {
+    font-size: large;
+    text-align: center;
+    margin-top: 4%;
+}
+
+section {
+    background: rgba(216, 188, 30, 0.431);
+    /* COMO HACER MAS PEQUEÑO SOLO EL FONT DE ACA?????????? */
+    /* background-image: url("Images/copialeCipher.png"); */
+    display: block;
+    padding: 10px 20px;
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+textarea{
+    overflow: hidden;
+}
+
+#offset {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    display: block;
+    font: 16px sans-serif;
+    font-weight: bold;
+    float: center;
+}
+
+input[type=number]{
+    width: 50px;
+}
+
+#cipher {
+  background: rgba(151, 89, 17, 0.9);
+  padding: 10px 15px;
+  margin: 10px 0px 30px 10px;
+  max-width: 49%;
+  border-radius: 30px;
+  font: 16px sans-serif;
+  font-weight: bold;
+}
+
+#decipher {
+  background: rgba(151, 89, 17, 0.9);
+  padding: 10px 15px;
+  margin: 10px 10px 30px 0px;
+  max-width: 49%;
+  border-radius: 30px;
+  font: 16px sans-serif;
+  font-weight: bold;
+}
+
+
+.buttons {
+    color: #ffffff;
+    background-color: rgba(197, 145, 1, 0.918);
+    border: none;
+    padding: 8px 10px;
+    margin-bottom: 0;
+    border-radius: 0 12px 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.buttons:hover,
+ .buttons:focus,
+ .buttons:active { 
+    color: #ffffff;
+    background-color: rgba(143, 98, 0, 0.966);
+    border: none;
+    padding: 8px 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    border-radius: 0 12px 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer {
+    text-align: right;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(197, 149, 15);
+    /* margin-bottom: 0; */
+}
+
+#copyLeft { 
+    display: inline-block; 
+    text-align: left; /*Hacer parrafo dentro del mismo div dejarle la clase al parrafo*/
+    margin: 0px; 
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1); 
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: FlipH; 
+    -ms-filter: “FlipH”; 
+ };
+
+
+
+
+
+
+ 
+
+ /* RESPONSIVE DESIGN */
+    /* En cuanto la página web alcance los 959px se 
+    ejecutan las siguientes reglas de estilo, todo 
+    arriba de los 960px, será mostrado en tamaño normal 
+    de pantalla de compu-->TAMAÑO PARA TABLETS*/
+@media screen and (max-width:959px) {  
+    #container1 {
+        width: 100%;
+    }
+    #leftColumn {
+        width: 30%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    #rightColumn {
+        width: 70%;
+        border-radius: 0px 0px 30px 30px;
+    }
+    img {
+        width: 100%
+    }
+}
+    
+    /* TAMAÑO CELULARES: Necesitamos que ambas columnas
+    se muestren una debajo de la otra, por eso ambos 
+    tendrán el 100% */
+@media screen and (max-width:640px) {
+    #leftColumn {
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    #rightColumn {
+        width: 100%;
+        border-radius: 0px 0px 30px 30px;
+    }
+    img {
+        width: 100%
+    }
+}
+    
+    /* Tope de tamaño!!!*/
+@media screen and (max-width:320px) {
+    #container1 {
+        width: 320px;
+    }
+}
+    
+@media screen and (min-width:1200px) {
+    header img {
+        width: 100%;
+    }
+    #leftColumn {
+        block-size: 25%;
+        background: rgba(197, 149, 15, 0.746);
+        border-radius: 30px 0px 0px 30px;
+        padding: 33px 10px;
+        font-size: 3em;
+        text-align: center;
+        display: inline-block;
+        width: 48%;
+        margin-left: 2%;
+    }
+    #rightColumn {
+        block-size: 30%;
+        background: rgba(170, 145, 7, 0.726);
+        border-radius: 0px 30px 30px 0px;
+        padding: 14.5px 10px;
+        font-size: 120%;
+        text-align: justify;
+        display: inline-block;
+        width: 43%;
+        vertical-align: top;
+    }
+}
+
+@media screen and (min-width:1235px) {
+    header img {
+        width: 100%;
+    }
+    #leftColumn {
+        block-size: 25%;
+        background: rgba(197, 149, 15, 0.746);
+        border-radius: 30px 0px 0px 30px;
+        padding: 33px 10px;
+        font-size: 3em;
+        text-align: center;
+        display: inline-block;
+        width: 37%;
+        margin-left: 13%;
+    }
+
+    #rightColumn {
+        block-size: 30%;
+        background: rgba(170, 145, 7, 0.726);
+        border-radius: 0px 30px 30px 0px;
+        padding: 14.5px 10px;
+        font-size: 120%;
+        text-align: justify;
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+    }
+}
